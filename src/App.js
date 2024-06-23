@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import SurveyForm from './components/SurveyForm';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            <nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <h1>Form-Level 3</h1>
+  </a>
+</nav>
+            <SurveyForm />
+        </div>
+    );
+};
 
 export default App;
